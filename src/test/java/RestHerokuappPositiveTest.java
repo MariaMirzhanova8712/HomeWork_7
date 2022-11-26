@@ -35,6 +35,7 @@ public class RestHerokuappPositiveTest {
         Assert.assertEquals("не совпали значения checkout ", checkout, checkoutActual);
     }
 
+    //Создание, удаление, проверка что удалено бронирование
     @Test
     public void deleteBookingPositive200() {
         Integer id = Tests.createBooking();

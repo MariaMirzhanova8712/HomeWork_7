@@ -64,6 +64,6 @@ public class RestHerokuappNegativeTest {
     public void deleteBookingWithWrongId() {
         String token = Tests.getToken();
         int actualStatusCode = Tests.deleteBooking(wrongId, token);
-        Assert.assertEquals("Удаление бронирования с несуществующим id ", 405, actualStatusCode);
+        Assert.assertEquals("Неожиданный код ответа на попытку удаления бронирования с несуществующим id ", 405, actualStatusCode);
     }
 }
